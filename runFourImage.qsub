@@ -1,0 +1,32 @@
+#!/bin/bash -l
+
+# name the project
+#$ -P cs523
+
+# job name
+#$ -N fourImage
+
+# merge error and output in output file
+#$ -j y
+
+#specify the running time limit
+#$ -l h_rt=24:00:00
+
+#send an email when job ends
+#$ -m e
+
+# require gpus
+#$ -l gpus=1
+
+# require cpus
+#$ -pe omp 10
+# specify gpu capability
+#$ -l gpu_c=7.0
+
+# load modules needed
+module load python3/3.8.6
+module load pytorch
+
+bash run.sh
+
+# end of script

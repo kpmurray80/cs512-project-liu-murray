@@ -1,0 +1,33 @@
+#!/bin/bash -l
+
+# name the project
+#$ -P cs523
+
+# job name
+#$ -N singleImage
+
+# merge error and output in output file
+#$ -j y
+
+#specify the running time limit
+#$ -l h_rt=12:00:00
+
+#send an email when job ends #$ -m e
+
+# require gpus
+#$ -l gpus=1
+
+# specify gpu capability
+#$ -l gpu_c=3.5
+
+# load modules needed
+module load python3/3.8.6
+module load pytorch
+
+# run on a single image, first arg is path, second image is corresponding view
+#bash run_single.sh "sample_data/images/0_L_CC.png" "L-CC"
+bash run_single.sh "sample_data/new_images/D_4092_1.LEFT-CC.png" "L-CC"
+
+# depending on dataset, may have to use bash scripting to create a loop to utilise single image network on multiple images
+
+# end of script

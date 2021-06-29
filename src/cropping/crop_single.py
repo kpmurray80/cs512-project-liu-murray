@@ -58,7 +58,7 @@ def main():
     parser = argparse.ArgumentParser(description='Remove background of image and save cropped files')
     parser.add_argument('--mammogram-path', required=True)
     parser.add_argument('--view', required=True)
-    parser.add_argument('--horizontal-flip', default="NO", type=str)
+    parser.add_argument('--horizontal-flip', default="YES", type=str)
     parser.add_argument('--cropped-mammogram-path', required=True)
     parser.add_argument('--metadata-path', required=True)
     parser.add_argument('--num-iterations', default=100, type=int)
