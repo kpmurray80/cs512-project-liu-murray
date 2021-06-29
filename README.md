@@ -1,28 +1,35 @@
 # References:
-**Projected adapted directly from:**
+### Project adapted directly from:
+
 **Deep Neural Networks Improve Radiologists' Performance in Breast Cancer Screening**\
 Nan Wu, Jason Phang, Jungkyu Park, Yiqiu Shen, Zhe Huang, Masha Zorin, Stanisław Jastrzębski, Thibault Févry, Joe Katsnelson, Eric Kim, Stacey Wolfson, Ujas Parikh, Sushma Gaddam, Leng Leng Young Lin, Kara Ho, Joshua D. Weinstein, Beatriu Reig, Yiming Gao, Hildegard Toth, Kristine Pysarenko, Alana Lewin, Jiyon Lee, Krystal Airola, Eralda Mema, Stephanie Chung, Esther Hwang, Naziya Samreen, S. Gene Kim, Laura Heacock, Linda Moy, Kyunghyun Cho, Krzysztof J. Geras\
 IEEE Transactions on Medical Imaging\
 2019
 
 Github: https://github.com/nyukat/breast_cancer_classifier
+
 Arxiv: https://arxiv.org/pdf/1903.08297v1.pdf
 
-**Dataset model was adapted on:**
+### Dataset this model was adapted to:
+
 [Ref paper/Mini-DDSM] C.D. Lekamlage, F. Afzal, E. Westerberg and A. Cheddad, “Mini-DDSM: Mammography-based Automatic Age Estimation,” in the 3rd International Conference on Digital Medicine and Image Processing (DMIP 2020), ACM, Kyoto, Japan, November 06-09, 2020, pp: 1-6.
+
 And
+
 [Ref DDSM] Michael Heath, Kevin Bowyer, Daniel Kopans, Richard Moore and W. Philip Kegelmeyer, in Proceedings of the Fifth International Workshop on Digital Mammography, M.J. Yaffe, ed., 212-218, Medical Physics Publishing, 2001. ISBN 1-930524-00-5.
 
 Kaggle: https://www.kaggle.com/cheddad/miniddsm2
 
 # Team
 Kyle Murray, kpmurray@bu.edu
+
 Vella(Yiting) Liu, vellaliu@bu.edu
 
 # Slides
 https://drive.google.com/file/d/1KuzzHebIlnW2rH1KJo9FSw_4mN6jAK9k/view?usp=sharing
 
 # Demo (taken from original README):
+
 **For more in depth information regarding the model and running, please see the original README.md file within the readme directory.**
 ### Exam-level
 
@@ -160,5 +167,9 @@ The labels for the included exams are as follows:
 | 3     | 1           | 1            | 1              | 1               |
 
 ### Additional Running Notes
-* The dataset this model was extended to is not present in this repo due to space constraints. Please see "/projectnb/cs523/kpmurray/project/breast_cancer_classifier/sample_data/new_images" for the data the model was adapted on
+* The dataset this model was extended to is not present in this repo due to space constraints. Please see "/projectnb/cs523/kpmurray/project/breast_cancer_classifier/sample_data/new_images" on the BU SCC for the data the model was adapted on
 * The fourImage.qsub and singleImage.qsub files will submit jobs to the SCC for the main model and single image variant accordingly.
+* To view AUC scores for the model on the adapted dataset, please see [this notebook](new_data_output/auc_generation.ipynb) within the new_data_output folder 
+
+## README
+For orginal readme file, please refer to [this file](readme/README.md) within the readme directory
