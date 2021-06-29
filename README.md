@@ -167,7 +167,7 @@ The labels for the included exams are as follows:
 | 3     | 1           | 1            | 1              | 1               |
 
 ### Additional Running Notes
-* The dataset this model was extended to is not present in this repo due to space constraints. Please see "/projectnb/cs523/kpmurray/project/breast_cancer_classifier/sample_data/new_images" on the BU SCC for the data the model was adapted on
+* The dataset this model was extended to is not present in this repo due to space constraints. Please see "/projectnb/cs523/kpmurray/project/breast_cancer_classifier/sample_data/new_images" on the BU SCC, or the dataset in the above "References" section for the data the model was adapted on
 * The runFourImage.qsub and runSingleImage.qsub files will submit jobs to the SCC for the main model and single image variant accordingly.
 * To view AUC scores for the model on the adapted dataset, please see [this notebook](new_data_output/auc_generation.ipynb) within the new_data_output folder 
 
